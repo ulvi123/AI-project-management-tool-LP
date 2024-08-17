@@ -60,6 +60,7 @@ import {
   HighlightsItem,
   HighlightsTestimonialItem,
 } from "components/highlights";
+import { color } from "framer-motion";
 
 const Home: NextPage = () => {
   return (
@@ -97,30 +98,30 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                Turn Client Concepts seamlessly 
+                <Br /> into maintainable code 
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{" "}
-                build intuitive SaaS products with speed.
+                <span><strong style={{ fontFamily: "sans-serif",color:"white"}}>Pairnode</strong></span> is an <Em> LLM and AI powered intelligence platform</Em>
+                <Br /> that turns client visions into detailed technical roadmaps,tasks, and more,  <Br />{" "}
+                helping involved stakeholders to collaborate and deliver faster.
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
               <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
+                <h1 style={{ fontSize: "1rem" ,fontFamily:"sans-serif"}}>Convert client ideas into structured technical assignments and roadmaps in minutes, ensuring your projects are always on track.</h1>
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
+                <ButtonLink colorScheme="primary" size="lg" href="#">
                   Sign Up
                 </ButtonLink>
                 <ButtonLink
                   size="lg"
-                  href="https://demo.saas-ui.dev"
+                  href="#"
                   variant="outline"
                   rightIcon={
                     <Icon
@@ -174,33 +175,33 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: "Accessible",
+            title: "Clear Specifications",
             icon: FiSmile,
-            description: "All components strictly follow WAI-ARIA standards.",
+            description: "Turn client ideas into detailed, easy-to-understand project plans with just a few clicks.",
             iconPosition: "left",
             delay: 0.6,
           },
           {
-            title: "Themable",
+            title: "Team Collaboration",
             icon: FiSliders,
             description:
-              "Fully customize all components to your brand with theme support and style props.",
+              "Work together with your team and other stakeholders in real-time, all in one place. Assign tasks, share updates, and keep everyone in sync.",
             iconPosition: "left",
             delay: 0.8,
           },
           {
-            title: "Composable",
+            title: "Time-Saving",
             icon: FiGrid,
             description:
-              "Compose components to fit your needs and mix them together to create new ones.",
+              "Quickly convert ideas into actionable tasks and timelines, so you can spend less time planning and more time building.",
             iconPosition: "left",
             delay: 1,
           },
           {
-            title: "Productive",
+            title: "Adaptive Planning",
             icon: FiThumbsUp,
             description:
-              "Designed to reduce boilerplate and fully typed, build your product at speed.",
+              "Our LLM and NLP algorithms optimizes timelines and deadlines based on your team’s capacity, ensuring projects are completed efficiently.",
             iconPosition: "left",
             delay: 1.1,
           },
@@ -216,16 +217,14 @@ const HighlightsSection = () => {
 
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem colSpan={[1, null, 2]} title="Core Capabilities">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+            Kickstart your project effortlessly <Em> Our platform helps you </Em>
+            transform client ideas into detailed, actionable plans in no time, so you can focus on building without the headache of manual setup.
           </Text>
 
-          <Flex
+          {/* <Flex
             rounded="full"
             borderWidth="1px"
             flexDirection="row"
@@ -253,53 +252,44 @@ const HighlightsSection = () => {
               isRound
               color="white"
             />
-          </Flex>
+          </Flex> */}
         </VStack>
       </HighlightsItem>
       <HighlightsItem title="Solid foundations">
         <Text color="muted" fontSize="lg">
-          We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+        We’ve done the heavy lifting so you don’t have to. 
+        Our platform ensures your projects start on a solid foundation, saving you time and effort from day one.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
-        name="Renata Alink"
+        name="Sandra Millik"
         description="Founder"
         avatar="/static/images/avatar.jpg"
         gradient={["pink.200", "purple.500"]}
       >
-        “Saas UI helped us set up a beautiful modern UI in no time. It saved us
-        hundreds of hours in development time and allowed us to focus on
-        business logic for our specific use-case from the start.”
+        “Pairnode transformed the way we manage projects. What used to take days now takes minutes, 
+        freeing us to focus on what really matters—delivering results to our clients.”
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
-        title="Start your next idea two steps ahead"
+        title="Start Your Next Project with Ease"
       >
         <Text color="muted" fontSize="lg">
-          We took care of all your basic frontend needs, so you can start
-          building functionality that makes your product unique.
+        We’ve taken care of all the essentials so you can start building immediately. 
+        Let <strong style={{ fontWeight: "bold" ,color: "white"}}>Pairnode</strong> handle the logistics, so you can focus on creating something great.
         </Text>
         <Wrap mt="8">
           {[
-            "authentication",
-            "navigation",
-            "crud",
-            "settings",
-            "multi-tenancy",
-            "layouts",
-            "billing",
-            "a11y testing",
-            "server-side rendering",
-            "documentation",
+            "Project Planning",
+            "Task Management",
+            "Team Collaboration",
+            "Client Communication",
+            "AI planning",
+            "Flexible Workflows",
+            "Effortless Setup",
+            "Auto generated documentation",
             "onboarding",
-            "storybooks",
-            "theming",
-            "upselling",
-            "unit testing",
-            "feature flags",
-            "responsiveness",
+            "User story mapping",
           ].map((value) => (
             <Tag
               key={value}
