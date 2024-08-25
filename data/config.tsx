@@ -8,8 +8,8 @@ import { Logo } from './logo'
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'Pairnode',
+    description: 'All in one AI intelligence tool for product teams',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
@@ -47,15 +47,15 @@ const siteConfig = {
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
+        href: '#',
         label: 'Contact',
       },
       {
-        href: 'https://twitter.com/saas_js',
+        href: '#',
         label: <FaTwitter size="14" />,
       },
       {
-        href: 'https://github.com/saas-js/saas-ui',
+        href: '#',
         label: <FaGithub size="14" />,
       },
     ],

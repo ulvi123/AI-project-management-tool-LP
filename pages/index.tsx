@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import * as React from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
@@ -66,7 +67,7 @@ const Home: NextPage = () => {
   return (
     <Box>
       <SEO
-        title="Saas UI Landingspage"
+        title="Saas U Landingspage"
         description="Free SaaS landingspage starter kit"
       />
       <Box>
@@ -318,16 +319,23 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          Not your regular 
+          <Br /> product management tool
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
+          <strong>Pairnode</strong> provides all-in-one package for your next project from product discovery until product delivery.
           <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          <br/>
+          &quot;The days are over when clients were "breathing on your neck" with deadlines,reporting,demos and constant requirement changes &quot;
+          <Br />
+          <br />
+
+        And it does not end there. As a PM you can track project progress,use our AI to analyze sentiment and team morale based on emails and messages,
+        efficiently inform key stakeholders,automatically generate postmortems and documentation and integrate all
+        related teams to the unified environment. <br /><br />We are aiming high to gamify the experience even help the executives to
+        see who is working on and on what level
         </>
       }
       align="left"
@@ -335,69 +343,67 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: "Components.",
+          title: "Integrations.",
           icon: FiBox,
           description:
-            "All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.",
+            "Integrate with your regular tools like Slack,Trello, Google Drive, Zoom and more. Pairnode takes care of all the data handling so you can focus on building.Gather all your data in one place.",
           variant: "inline",
         },
         {
-          title: "Starterkits.",
+          title: "Project scoping and planning",
           icon: FiLock,
           description:
-            "Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.",
+            "adjust the project scope dynamically as new data or requirements are added. AI can suggest modifications to timelines, resources, or budgets based on historical data and project complexity.",
           variant: "inline",
         },
         {
-          title: "Documentation.",
+          title: "Documentation and Guidlines generation",
           icon: FiSearch,
           description:
-            "Extensively documented, including storybooks, best practices, use-cases and examples.",
+            "Add ecessary inputs as key words and the AI will generate documentation and guidelines for your project.Save your time for less redundant tasks",
           variant: "inline",
         },
         {
-          title: "Onboarding.",
+          title: "Enhanced Team Collaboration",
           icon: FiUserPlus,
           description:
-            "Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.",
+            "AI can automatically generate summaries of meetings, highlighting key decisions, action items,postmortems and deadlines. This can be particularly useful for team members who couldn’t attend the meeting.",
           variant: "inline",
         },
         {
-          title: "Feature flags.",
+          title: "Product requirements generation",
           icon: FiFlag,
           description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
+            "Generate product requirements based on your project requirements. The tool can suggest modifications to timelines, resources, or budgets based on historical data and project complexity.",
           variant: "inline",
         },
         {
-          title: "Upselling.",
+          title: "Personalized Workflows and Task Management",
           icon: FiTrendingUp,
           description:
-            "Components and hooks for upgrade flows designed to make upgrading inside your app frictionless.",
+            "re-prioritize tasks dynamically as project conditions change, ensuring that the most critical tasks are always addressed first.Let AI to determine who suits best for the job.",
           variant: "inline",
         },
         {
-          title: "Themes.",
+          title: "Client Interaction and Engagement",
           icon: FiToggleLeft,
           description:
-            "Includes multiple themes with darkmode support, always have the perfect starting point for your next project.",
+            "Allow clients to interact with and provide feedback on prototypes directly within the platform.With that in place, back and forth client interactions wil be minimized.",
           variant: "inline",
         },
         {
-          title: "Generators.",
+          title: "Gamification and Motivation",
           icon: FiTerminal,
           description:
-            "Extend your design system while maintaininig code quality and consistency with built-in generators.",
+            "Use gamification elements such as badges, leaderboards, and achievement tracking to motivate team members and increase engagement.",
           variant: "inline",
         },
         {
-          title: "Monorepo.",
+          title: "CI/CD-coming soon",
           icon: FiCode,
           description: (
             <>
-              All code is available as packages in a high-performance{" "}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
+              Manage your deployment process with our CI/CD tool.
             </>
           ),
           variant: "inline",

@@ -44,7 +44,7 @@ export const Header = (props: HeaderProps) => {
     >
       <Container maxW="container.2xl" px="8" py="4">
         <Flex width="full" align="center" justify="space-between">
-          <Logo
+          {/* <Logo
             onClick={(e) => {
               if (window.location.pathname === '/') {
                 e.preventDefault()
@@ -55,7 +55,8 @@ export const Header = (props: HeaderProps) => {
                 })
               }
             }}
-          />
+          /> */}
+          <h1 className='text-3xl font-Roboto'>Pairnode</h1>
           <Navigation />
         </Flex>
       </Container>
