@@ -6,7 +6,7 @@ import { FiCheck } from 'react-icons/fi'
 import { Logo } from './logo'
 
 const siteConfig = {
-  logo: Logo,
+  // logo: "Pairnode",
   seo: {
     title: 'Pairnode',
     description: 'All in one AI intelligence tool for product teams',
@@ -42,13 +42,13 @@ const siteConfig = {
     copyright: (
       <>
         Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        <Link href="https://rethynk.co">Rethynk Tech and Innovation</Link>
       </>
     ),
     links: [
       {
         href: '#',
-        label: 'Contact',
+        label: '/signup',
       },
       {
         href: '#',
@@ -61,7 +61,7 @@ const siteConfig = {
     ],
   },
   signup: {
-    title: 'Start building with Saas UI',
+    title: 'Let Pairnode to streamline your project management process',
     features: [
       {
         icon: FiCheck,

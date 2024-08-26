@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { HStack, Text } from '@chakra-ui/react'
 
 export default {
@@ -7,30 +8,27 @@ export default {
   plans: [
     {
       id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
+      title: 'Pilot',
+      description: 'Ideal for freelancers and small/mid size agencies',
+      price: ` from 25.99$ ${'/per seat/' + 'month'}`,
       features: [
         {
-          title: 'MIT License',
+          title: 'Project scoping and planning',
         },
         {
-          title: 'Authentication (Clerk/Supabase/Magic)',
+          title: 'Customer requirements converter',
         },
         {
-          title: 'Form (react-hook-form)',
+          title: 'Limited Product analytics',
         },
         {
-          title: 'Modals manager',
+          title: 'Whiteboard',
         },
         {
-          title: 'Hotkeys',
+          title: 'Task management and Roadmaps',
         },
         {
-          title: 'Web3 components',
-        },
-        {
-          title: 'And much more...',
+          title: '1 team workspace',
         },
       ],
       action: {
@@ -39,31 +37,31 @@ export default {
     },
     {
       id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
+      title: 'Premium (most popular)',
+      description: 'Ideal for Seed stage startups and Web/design agencies',
+      price: `from 49.99$ ${'/per seat/' + 'month'}`,
       isRecommended: true,
       features: [
         {
-          title: 'One project',
+          title: 'Everything in Pilot plan plus',
         },
         {
-          title: 'One developer',
+          title: 'Customized reports and templates',
         },
         {
-          title: 'Advanced components',
+          title: 'All-in-one client dashboard',
         },
         {
-          title: 'Multiple themes',
+          title: '3 team Workspaces',
         },
         {
-          title: 'Next.js and Electron boilerplates',
+          title: 'Integrations with other tools',
         },
         {
-          title: 'Private discord community',
+          title: 'Breakout chat rooms for meetings',
         },
         {
-          title: '1 year of updates',
+          title: 'Centralized Feedback and Response workflow',
         },
         null,
         {
@@ -77,28 +75,34 @@ export default {
     },
     {
       id: 'startup',
-      title: 'Startup',
-      description: 'Unlimited license for growing teams.',
+      title: 'Enterprise',
+      description: 'Unlimited license for growing product teams and agencies.',
       price: (
         <HStack>
-          <Text textDecoration="line-through" fontSize="sm" color="gray.400">
+          {/* <Text textDecoration="line-through" fontSize="sm" color="gray.400">
             €999,-
-          </Text>
-          <Text>€499,-</Text>
+          </Text> */}
+          <Text>Let's Discuss</Text>
         </HStack>
       ),
       features: [
         {
-          title: 'Unlimited projects',
+          title: 'Eveything in Pilot and Premium plan plus',
         },
         {
-          title: 'Unlimited developers',
+          title: 'AI-powered customer support assistant',
         },
         {
-          title: '1 year of updates',
+          title: 'Custom Contract & SLA',
         },
         {
-          title: 'Everything from Bootstrap',
+          title: 'Premium Integrations',
+        },
+        {
+          title: 'Security Audit & Compliance (SOC 2 Type 2 and GDPR)',
+        },
+        {
+          title: 'Dedicated human Customer success manager',
         },
         null,
         {

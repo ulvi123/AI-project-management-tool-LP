@@ -464,7 +464,7 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: "Support us by becoming a stargazer! 🚀 ",
+        title: "Get waitlisted to use Pairnode's beta app! 🚀 ",
         description:
           '<img src="https://img.shields.io/github/stars/saas-js/saas-ui.svg?style=social&label=Star" />',
         href: "https://github.com/saas-js/saas-ui",
