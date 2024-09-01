@@ -8,7 +8,6 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import Navigation from './navigation'
-import { Logo } from './logo'
 import { useScroll } from 'framer-motion'
 
 export interface HeaderProps extends Omit<BoxProps, 'children'> {}
