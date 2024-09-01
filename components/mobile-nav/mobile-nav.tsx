@@ -27,7 +27,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { RemoveScroll } from 'react-remove-scroll'
 
 import siteConfig from 'data/config'
-import { Logo } from 'components/layout/logo'
+// import { Logo } from 'components/layout/logo'
 import { Link } from '@saas-ui/react'
 
 interface NavLinkProps extends LinkProps {
