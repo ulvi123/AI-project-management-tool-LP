@@ -27,7 +27,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { RemoveScroll } from 'react-remove-scroll'
 
 import siteConfig from 'data/config'
-// import { Logo } from 'components/layout/logo'
+
 import { Link } from '@saas-ui/react'
 
 interface NavLinkProps extends LinkProps {
@@ -124,7 +124,7 @@ export function MobileNavContent(props: MobileNavContentProps) {
             >
               <Box>
                 <Flex justify="space-between" px="8" pt="4" pb="4">
-                  <Logo />
+                  
                   <HStack spacing="5">
                     <CloseButton ref={closeBtnRef} onClick={onClose} />
                   </HStack>
